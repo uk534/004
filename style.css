@@ -1,0 +1,60 @@
+html,
+body {
+    height: 3000px;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #333;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    background-image: url(img/cat_2830677b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    background-attachment: fixed;
+    /*padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding: 80px;*/
+    padding: 120px 250px;
+    /*上下;左右*/
+    /*padding: 80px 100px 50px 30px;上右下左*/
+    text-align: center;
+    /*margin-top: 50px;*/
+    /*margin: 50px;*/
+    margin: 50px auto;
+    /*上下;左右*/
+    border: 2px solid #FF0022;
+    box-shadow: 0 20px 0 -10px rgba(0, 0, 0, .5), 0 5px 0 red;
+    /*左右偏移;上下偏移;模糊;內縮;顏色,多層陰影*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.header-content {
+    position: relative;
+    z-index: 3;
+}
+
+.header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0.7);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+*/
+/*偽元素 pseudo element(after before)*/
